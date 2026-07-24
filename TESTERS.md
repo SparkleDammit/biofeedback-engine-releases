@@ -5,12 +5,12 @@ and/or an OBS overlay. Everything runs locally on your machine — nothing is
 uploaded anywhere.
 
 Grab the installer for your OS from the
-[latest release](https://github.com/SparkleDammit/biofeedback-engine-releases/releases/latest).
+[latest release](https://github.com/SparkleDammit/biofeedback-engine/releases/latest).
 
 ## Install
 
 **Windows**
-1. Download `Biofeedback Engine Setup 0.1.0.exe`.
+1. Download `Biofeedback.Engine.Setup.0.1.0.exe`.
 2. Run it. Windows SmartScreen will warn (the app isn't signed yet) → click
    **More info** → **Run anyway**.
 3. Follow the installer.
@@ -27,9 +27,13 @@ Grab the installer for your OS from the
 
 Any of these works — pick one:
 - **Chest strap / armband** (Polar H10, COOSPO, Wahoo, etc.) — pairs directly
-  over Bluetooth from inside the app.
-- **Watch** (Apple Watch, Galaxy Watch) — via a free relay: **Pulsoid** or
-  **HypeRate**. Paste your token in the app's **Sources** tab.
+  over Bluetooth from inside the app. **No subscription, best signal** (and the
+  only option that gives HRV). This is the recommended path.
+- **Watch, via a relay** (Apple Watch, Galaxy Watch, etc.) — paste a token in the
+  app's **Sources** tab:
+  - **HypeRate** — **free**; request an API key at [hyperate.io](https://www.hyperate.io/).
+  - **Pulsoid** — works, but its API token requires a **paid Pulsoid plan**. Only
+    use it if you already subscribe; otherwise use HypeRate or a strap.
 - **No hardware?** Use the built-in **simulator** to try the whole thing dry.
 
 ## Quick start
