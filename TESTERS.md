@@ -28,7 +28,10 @@ Grab the installer for your OS from the
 Any of these works — pick one:
 - **Chest strap / armband** (Polar H10, COOSPO, Wahoo, etc.) — pairs directly
   over Bluetooth from inside the app. **No subscription, best signal** (and the
-  only option that gives HRV). This is the recommended path.
+  only option that gives HRV). This is the recommended path — *if the computer
+  running the app has Bluetooth.* Many streaming desktops don't; if you see
+  "no Bluetooth", pair the strap to the free **HypeRate** phone app and use the
+  relay below instead (no local Bluetooth needed).
 - **Watch, via a relay** (Apple Watch, Galaxy Watch, etc.) — paste a token in the
   app's **Sources** tab:
   - **HypeRate** — **free**; request an API key at [hyperate.io](https://www.hyperate.io/).
