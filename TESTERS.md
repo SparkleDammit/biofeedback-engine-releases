@@ -5,12 +5,12 @@ and/or an OBS overlay. Everything runs locally on your machine — nothing is
 uploaded anywhere.
 
 Grab the installer for your OS from the
-[latest release](https://github.com/SparkleDammit/biofeedback-engine/releases/latest).
+[latest release](https://github.com/SparkleDammit/biofeedback-engine-releases/releases/latest).
 
 ## Install
 
 **Windows**
-1. Download `Biofeedback.Engine.Setup.0.1.0.exe`.
+1. Download `Biofeedback.Engine.Setup.0.1.1.exe`.
 2. Run it. Windows SmartScreen will warn (the app isn't signed yet) → click
    **More info** → **Run anyway**.
 3. Follow the installer.
@@ -32,8 +32,11 @@ Any of these works — pick one:
   running the app has Bluetooth.* Many streaming desktops don't; if you see
   "no Bluetooth", pair the strap to the free **HypeRate** phone app and use the
   relay below instead (no local Bluetooth needed).
-- **Watch, via a relay** (Apple Watch, Galaxy Watch, etc.) — paste a token in the
-  app's **Sources** tab:
+- **Apple Watch** — the free **HeartCast** app (App Store) rebroadcasts your Watch
+  over Bluetooth, so it connects like a strap (needs Bluetooth on the PC). Or use a
+  relay below.
+- **Watch, via a relay** (Apple Watch, Galaxy Watch, etc.) — in **Setup → Sources**,
+  paste a token:
   - **HypeRate** — **free**; request an API key at [hyperate.io](https://www.hyperate.io/).
   - **Pulsoid** — works, but its API token requires a **paid Pulsoid plan**. Only
     use it if you already subscribe; otherwise use HypeRate or a strap.
@@ -41,12 +44,19 @@ Any of these works — pick one:
 
 ## Quick start
 
-1. Open the app → **Sources** tab → connect your strap/watch (or pick simulator).
-2. Watch the heart-rate and intensity gauges move.
-3. **Tune** tab — adjust the intensity cap and pattern to taste. The big **STOP**
-   button halts output instantly.
-4. **OBS** tab — copy the overlay URL into an OBS **Browser Source** to show HR /
+The app opens on a calm live view. Everything you set up lives behind the
+**⚙ Setup** button (top-right).
+
+1. Click **⚙ Setup → Sources** → connect your strap or watch (or click **Simulate**
+   to try it dry). Your heart rate appears in the big heart.
+2. Rest a moment and watch the intensity react to your heart rate.
+3. **Setup → Tune** — set the max intensity cap (it always shows in the header) and
+   pick a pattern. The big **STOP** button halts output instantly.
+4. **Setup → OBS** — copy an overlay URL into an OBS **Browser Source** to show HR /
    intensity on stream.
+
+If you step away and the connection drops, the heart-rate relay reconnects on its
+own; if the toy drops, just click **Connect toy** again — no need to restart.
 
 ## Safety
 
