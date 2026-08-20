@@ -10,7 +10,7 @@ Grab the installer for your OS from the
 ## Install
 
 **Windows**
-1. Download `Biofeedback.Engine.Setup.0.1.1.exe`.
+1. Download `Biofeedback.Engine.Setup.0.1.2.exe`.
 2. Run it. Windows SmartScreen will warn (the app isn't signed yet) → click
    **More info** → **Run anyway**.
 3. Follow the installer.
@@ -62,6 +62,16 @@ own; if the toy drops, just click **Connect toy** again — no need to restart.
 
 - Start the **intensity cap low** and raise it gradually.
 - **STOP** cuts output immediately, any time.
+- Keep the app **window open** while you use it — running behind your game is fine,
+  but **minimizing it can pause heart-rate updates**. If that happens the app now
+  shows "signal lost" and drops the toy to zero until the reading returns.
+
+## Coming soon
+
+- **Thrusting / stroker toys** (Solace Pro, etc.): dedicated support is in progress.
+  For now they work best via **Lovense Game Mode** with the **Steady** pattern — the
+  shaped patterns can make the stroking jittery, because the toy needs a moment to
+  settle to each new speed.
 
 ## Reporting back
 
